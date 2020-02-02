@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>My Landing Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function () {
+                $("#select").change(function () {
+                    var inputVal = $(this).val();
+                    var eleBox = $("." + inputVal);
+                    $(".gif").hide();
+                    $(eleBox).show();
+                });
+            });
+       </script> 
+    </head>
+    <body>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+          <h1 style="font-size:3vw">Abby Jardine</h1>
+        </div>
+          <div id="banner">
+            <img src= "https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg" style=width:100%;background-image:no-repeat;>
+          </div>
+             <h2>I'm really excited to apply to themes.</h2>
+             <p>I love to help merchants communicate their brand and vision through design. It's my fave.</p>
+        <table>
+            <thead>
+              <tr>
+                <th scope="col">Work I've done on CSS and HTML</th>
+                <th scope="col">Troubleshooting work</th>
+                <th scope="col">Customer service</th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+                <td>I have completed a FAS course in CSS3 and HTML5 several years ago. I've also worked on CSS and HTML as well as some Javascript on Code Academy and Udemy. I haven't had a lot of chances to put my coding learning into practical use but I am eager to learn as I do best through practice and application.</td>
+                <td>I've attended TMS presentations regularly for the last 6 months to help with my troubleshooting skills. I have found this to benefit my general problem solving methods and how I approach theme issues.</td>
+                <td>Guruing for nearly 2 years has helped me with customer support and fine tuning empathy, emotional intelligence and using non violent communication to help get to the heart of any issue and make the merchant feel heard and understood.</td>
+               </tr>
+              </tbody>
+         </table>
+          <form action="/practice.html" method="POST">
+             <h2>Will you hire me for theme support?</h2>
+             <p>Abby would be a great addition to your team's support for themes. You know you want to!</p>
+          </form>
+         <section class="answers">
+            <label for="answers">Select one of the following:</label>
+             <select id="select" name="select">
+               <option>Select One</option>
+               <option value="one">Yes</option>
+               <option value="two">Definitely</option>
+               <option value="three">Get Her In Now!</option>
+             </select>
+         </section>
+          <!-- Gif section for Javascript -->
+         <div class= "one gif">
+         <img src= "https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif" width="30%" height="auto" alt="Man nodding">
+        </div>
+        <div class= "two gif">
+         <img src= "https://media.giphy.com/media/102VfCWF40oAuI/giphy.gif" width="50%" height="auto" alt="Two men dancing">
+         </div>
+         <div class= "three gif">
+         <img src= "https://media.giphy.com/media/GStLeae4F7VIs/giphy.gif" width="50%" height="auto" alt="Audience Clapping with balloons">
+        </div>
+    </body>
+      <footer>
+        <h1>I heart theme support <3</h1>
+      </footer>
+</html>
